@@ -31,11 +31,11 @@ public class App {
         modules1ere[10] = new ModuleInfo(NOMS_MODULES[10]);
         modules1ere[11] = new ModuleInfo(NOMS_MODULES[11]);
         Professeur[] profs = new Professeur[5];
-        profs[0] = new Professeur("WICK", "John");
-        profs[1] = new Professeur("SWIFT", "Taylor");
-        profs[2] = new Professeur("CROFT", "Lara");
-        profs[3] = new Professeur("SKYWALKER", "Anakin");
-        profs[4] = new Professeur("RICHARD", "Jean-marc");
+        profs[0] = new Professeur("Wick", "John");
+        profs[1] = new Professeur("Swift", "Taylor");
+        profs[2] = new Professeur("Croft", "Lara");
+        profs[3] = new Professeur("Skywalker", "Anakin");
+        profs[4] = new Professeur("Richard", "Jean-marc");
         do {
             ServiceFormationMaitres.attribuerModules(profs, modules1ere);
         } while (ServiceFormationMaitres.tousModulesCouverts(profs, modules1ere));

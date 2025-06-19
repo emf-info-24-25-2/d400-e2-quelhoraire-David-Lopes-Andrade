@@ -23,11 +23,7 @@ public class ModuleInfo {
 
     @Override
     public String toString() {
-<<<<<<< HEAD
-        String resultat;
-=======
         String resultat = "";
->>>>>>> 1ab3e3992d055c39e037a16b8aecdd2d65b42e8d
         if (professeur != null) {
             resultat = nom + " avec " + professeur;
         }

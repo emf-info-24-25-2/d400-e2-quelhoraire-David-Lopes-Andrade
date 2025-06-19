@@ -13,18 +13,6 @@ public class Horaire {
         blocs = new Bloc[NBRE_DE_BLOCS];
         for (int i = 0; i < blocs.length; i++) {
             resultat = "B" + blocs[i] + "S" + blocs[i];
-<<<<<<< HEAD
-            /*
-             * public Horaire() {
-             * this.blocs = new Bloc[NBRE_DE_BLOCS];
-             * for (int i = 0; i < blocs.length; i++) {
-             * blocs[i] = new Bloc("B" + (i + 1) + "S" + (i / 3 + 1));
-             * }
-             * }
-             */
-=======
-
->>>>>>> 1ab3e3992d055c39e037a16b8aecdd2d65b42e8d
         }
     }
 
@@ -40,9 +28,8 @@ public class Horaire {
                 }
             }
         }
-<<<<<<< HEAD
+
         /*
-         * public boolean planifier(ModuleInfo[] modules, Professeur[] profs) {
          * boolean moduleSansProf = false;
          * boolean moduleSansPlace = false;
          * 
@@ -53,10 +40,17 @@ public class Horaire {
          * boolean professeurDisponible = false;
          * for (int j = 0; j < profs.length; j++) {
          * if (profs[j].enseigneCeModule(modules[i].getNom())) {
+         * 
          * modules[i].setProfesseur(profs[j]);
          * professeurDisponible = true;
          * break;
          * }
+         * ce bout de code ou on
+         * doit prendre les profs de la boucle j avec les mdoules de la boucle i jamais
+         * je fais ça en eval
+         * 
+         * 
+         * 
          * }
          * if (!professeurDisponible) {
          * moduleSansProf = true;
@@ -76,8 +70,6 @@ public class Horaire {
          * return !moduleSansProf && !moduleSansPlace;
          * }
          */
-=======
->>>>>>> 1ab3e3992d055c39e037a16b8aecdd2d65b42e8d
 
         return reussi;
     }
@@ -86,48 +78,9 @@ public class Horaire {
         for (int i = 0; i < blocs.length; i++) {
             DayOfWeek.values()[i / 2].getDisplayName(TextStyle.FULL, Locale.FRANCE);
         }
-<<<<<<< HEAD
-        /*
-         * public void afficherHoraire() {
-         * 
-         * LocalDateTime dateHeureActuelle = LocalDateTime.now();
-         * DateTimeFormatter formatter =
-         * DateTimeFormatter.ofPattern("dd/MM/yyyy 'à' HH:mm");
-         * System.out.println(
-         * "____________________________________________________________________");
-         * System.out.println(
-         * "\nHoraire 1ère année CFC Informaticien (version du " +
-         * dateHeureActuelle.format(formatter) + ")");
-         * System.out.println(
-         * "____________________________________________________________________");
-         * for (int i = 0; i < blocs.length; i++) {
-         * blocs[i].afficherHoraire();
-         * }
-         * }
-         */
-=======
->>>>>>> 1ab3e3992d055c39e037a16b8aecdd2d65b42e8d
     }
 
     public Bloc moduleDansQuelleBloc(ModuleInfo module) {
         return null;
-<<<<<<< HEAD
-        /*
-         * public Bloc moduleDansQuelBloc(ModuleInfo module) {
-         * Bloc bloc = null;
-         * for (int i = 0; i < blocs.length; i++) {
-         * if (blocs[i].contientModule(module)) {
-         * bloc = blocs[i];
-         * break;
-         * }
-         * }
-         * 
-         * return bloc;
-         * }
-         * }
-         */
-=======
-
->>>>>>> 1ab3e3992d055c39e037a16b8aecdd2d65b42e8d
     }
 }
