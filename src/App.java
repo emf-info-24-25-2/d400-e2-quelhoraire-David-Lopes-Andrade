@@ -36,7 +36,6 @@ public class App {
         profs[2] = new Professeur("CROFT", "Lara");
         profs[3] = new Professeur("SKYWALKER", "Anakin");
         profs[4] = new Professeur("RICHARD", "Jean-marc");
-
         do {
             ServiceFormationMaitres.attribuerModules(profs, modules1ere);
         } while (ServiceFormationMaitres.tousModulesCouverts(profs, modules1ere));
